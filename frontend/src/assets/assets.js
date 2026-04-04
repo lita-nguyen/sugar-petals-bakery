@@ -9,6 +9,9 @@ import icon_basket from './icon-basket.jpg'
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
+import website_icon from './website_icon.png'
+import facebook_icon from './facebook_icon.png'
+import instagram_icon from './instagram_icon.png'
 
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.jpg'
@@ -23,6 +26,10 @@ import food_1 from './food_1.jpg'
 import food_2 from './food_2.jpg'
 import food_3 from './food_3.jpg'
 import food_4 from './food_4.jpg'
+import food_5 from './food_5.jpg'
+import food_6 from './food_6.jpg'
+import food_7 from './food_7.jpg'
+import food_8 from './food_8.jpg'
 
 export const assets = {
     logo,
@@ -34,6 +41,9 @@ export const assets = {
     add_icon_white,
     add_icon_green,
     remove_icon_red,
+    website_icon,
+    facebook_icon,
+    instagram_icon
 }
 
 export const menulist = [
@@ -76,7 +86,7 @@ export const foodlist = [
         _id: "1",
         name: "Chocolate Cake",
         image: food_1,
-        price: 20,
+        price: 30,
         description: "A delicious chocolate cake with rich flavor and moist texture.",
         category: "Cake"
     },
@@ -84,7 +94,7 @@ export const foodlist = [
         _id: "2",
         name: "Strawberry Cake",
         image: food_2,
-        price: 20,
+        price: 32,
         description: "A delicious strawberry cake with rich flavor and moist texture.",
         category: "Cake"
     },
@@ -92,7 +102,7 @@ export const foodlist = [
         _id: "3",
         name: "Vanilla Cake",
         image: food_3,
-        price: 30,
+        price: 28,
         description: "A delicious vanilla cake with rich flavor and moist texture.",
         category: "Cake"
     },
@@ -100,8 +110,40 @@ export const foodlist = [
         _id: "4",
         name: "Matcha Cake",
         image: food_4,
-        price: 25,
+        price: 35,
         description: "A delicious matcha cake with rich flavor and moist texture.",
         category: "Cake"
+    },
+    {
+        _id: "5",
+        name: "Orio Cupcake",
+        image: food_5,
+        price: 13,
+        description: "A delicious orio cupcake with rich flavor and moist texture.",
+        category: "Cupcake"
+    },
+    {
+        _id: "6",
+        name: "Mint Cupcake",
+        image: food_6,
+        price: 11,
+        description: "A delicious mint cupcake with rich flavor and moist texture.",
+        category: "Cupcake"
+    },
+    {
+        _id: "7",
+        name: "Blueberry Cupcake",
+        image: food_7,
+        price: 15,
+        description: "A delicious blueberry cupcake with rich flavor and moist texture.",
+        category: "Cupcake"
+    },
+    {
+        _id: "8",
+        name: "Lemon Cupcake",
+        image: food_8,
+        price: 9,
+        description: "A delicious lemon cupcake with rich flavor and moist texture.",
+        category: "Cupcake"
     }
 ]
