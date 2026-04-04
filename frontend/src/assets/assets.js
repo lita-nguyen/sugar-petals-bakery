@@ -3,6 +3,8 @@ import logo1 from './logo1.png'
 
 import img_header from './header_img.jpg'
 import rating_starts from './rating_starts.jpg'
+import play_store from './play_store.jpg'
+import app_store from './app_store.jpg'
 
 import icon_search from './icon-search.png'
 import icon_basket from './icon-basket.jpg'
@@ -35,6 +37,8 @@ export const assets = {
     logo,
     logo1,
     img_header,
+    play_store,
+    app_store,
     rating_starts,
     icon_search,
     icon_basket,
