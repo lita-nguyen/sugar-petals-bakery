@@ -31,15 +31,15 @@
 .site-slogan {
   font-size: 16px;
   font-weight: 400;
-  color: #c70e1c;
+  color: #333;
 }
 
 .navbar-menu {
   display: flex;
   list-style: none;
   gap: 30px;
-  color: #c70e1c;
   font-size: 18px;
+  color: #333;
 }
 
 .navbar-right {
@@ -89,6 +89,7 @@
 }
 
 .navbar .active {
+  color: #c70e1c;
   padding-bottom: 2px;
   border-bottom: 2px solid #c70e1c;
 }
