@@ -1,8 +1,11 @@
 .navbar{
+    width: 100%;
     padding: 15px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .navbar-left {
@@ -13,6 +16,7 @@
 
 .navbar .logo {
   width: 100px;
+  min-width: 100px;
   height: auto;
 }
 
