@@ -14,6 +14,7 @@ import remove_icon_red from './remove_icon_red.png'
 import website_icon from './website_icon.png'
 import facebook_icon from './facebook_icon.png'
 import instagram_icon from './instagram_icon.png'
+import cross_icon from './cross_icon.png'
 
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.jpg'
@@ -47,7 +48,8 @@ export const assets = {
     remove_icon_red,
     website_icon,
     facebook_icon,
-    instagram_icon
+    instagram_icon,
+    cross_icon
 }
 
 export const menulist = [
