@@ -15,6 +15,9 @@ import website_icon from './website_icon.png'
 import facebook_icon from './facebook_icon.png'
 import instagram_icon from './instagram_icon.png'
 import cross_icon from './cross_icon.png'
+import profile_icon from './profile_icon.png'
+import bag_icon from './bag_icon.png'
+import logout_icon from './logout_icon.png'
 
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.jpg'
@@ -49,6 +52,9 @@ export const assets = {
     website_icon,
     facebook_icon,
     instagram_icon,
+    profile_icon,
+    bag_icon,
+    logout_icon,
     cross_icon
 }
 

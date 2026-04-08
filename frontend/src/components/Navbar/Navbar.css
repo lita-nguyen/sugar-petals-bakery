@@ -101,3 +101,48 @@
 .navbar li {
   cursor: pointer;
 }
+
+.navbar-profile {
+  position: relative;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: 1px solid #c70e1c;
+  list-style: none;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.nav-profile-dropdown img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-profile > img {
+  width: 28px;
+  height: 28px;
+}
+
+.nav-profile-dropdown li:hover {
+  color: #c70e1c;
+}
