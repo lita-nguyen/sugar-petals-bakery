@@ -8,8 +8,8 @@ node_modules/
 dist/
 
 # Uploads (backend)
-backend/uploads/*
-!backend/uploads/.gitkeep
+# Committing current uploads to keep seed images on Render
+
 
 # IDE
 .vscode/
