@@ -20,9 +20,9 @@ const Footer = () => {
                         We are dedicated to creating sweet and memorable moments for you and your loved ones.
                     </p>
                     <div className="footer-social-icons">
-                        <img className="social-icon" src={assets.website_icon} alt="" />
-                        <img className="social-icon" src={assets.facebook_icon} alt="" />
-                        <img className="social-icon" src={assets.instagram_icon} alt="" />
+                        <a href="https://www.vlu.edu.vn/" target="_blank" rel="noopener noreferrer"><img className="social-icon" src={assets.website_icon} alt="Website" /></a>
+                        <a href="https://www.facebook.com/itvlu#" target="_blank" rel="noopener noreferrer"><img className="social-icon" src={assets.facebook_icon} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com/vanlanguniversity/" target="_blank" rel="noopener noreferrer"><img className="social-icon" src={assets.instagram_icon} alt="Instagram" /></a>
                     </div>
                 </div>
 
