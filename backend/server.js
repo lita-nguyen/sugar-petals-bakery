@@ -29,13 +29,13 @@ app.use("/api/order",orderRouter)
 
 // serve admin panel
 app.use("/admin", express.static(path.join(__dirname, "../admin/dist")))
-app.get("/admin/*", (req, res) => {
+app.get("/admin/{*path}", (req, res) => {
     res.sendFile(path.join(__dirname, "../admin/dist/index.html"))
 })
 
 // serve frontend
 app.use(express.static(path.join(__dirname, "../frontend/dist")))
-app.get("*", (req, res) => {
+app.get("{*path}", (req, res) => {
     res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
 })
 
