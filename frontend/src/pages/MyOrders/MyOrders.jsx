@@ -22,17 +22,17 @@ const MyOrders = () => {
 
   const getStatusClass = (status) => {
     switch (status) {
-      case "Đang xử lý": return "status-processing";
-      case "Đang chuẩn bị": return "status-preparing";
-      case "Đang giao hàng": return "status-delivering";
-      case "Đã giao": return "status-delivered";
+      case "Processing": return "status-processing";
+      case "Preparing": return "status-preparing";
+      case "Out for Delivery": return "status-delivering";
+      case "Delivered": return "status-delivered";
       default: return "status-processing";
     }
   }
 
   return (
     <div className='my-orders'>
-      <h2>Đơn hàng của tôi</h2>
+      <h2>My Orders</h2>
       <div className="container">
         {data.map((order, index) => {
           return (
@@ -51,7 +51,7 @@ const MyOrders = () => {
                   })}
                 </p>
                 <p className="order-date">
-                  {new Date(order.date).toLocaleDateString('vi-VN', {
+                  {new Date(order.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
@@ -61,12 +61,12 @@ const MyOrders = () => {
                 </p>
               </div>
               <p className="order-amount">${order.amount}.00</p>
-              <p className="order-count">Số lượng: {order.items.length}</p>
+              <p className="order-count">Items: {order.items.length}</p>
               <p className={`order-status ${getStatusClass(order.status)}`}>
                 <span className="status-dot"></span>
                 {order.status}
               </p>
-              <button onClick={fetchOrders} className="track-btn">Làm mới</button>
+              <button onClick={fetchOrders} className="track-btn">Refresh</button>
             </div>
           )
         })}

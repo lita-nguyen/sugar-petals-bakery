@@ -13,7 +13,7 @@ const Orders = ({ url }) => {
     if (response.data.success) {
       setOrders(response.data.data);
     } else {
-      toast.error("Lỗi khi tải đơn hàng");
+      toast.error("Failed to load orders");
     }
   }
 
@@ -24,7 +24,7 @@ const Orders = ({ url }) => {
     });
     if (response.data.success) {
       await fetchAllOrders();
-      toast.success("Cập nhật trạng thái thành công");
+      toast.success("Status updated successfully");
     }
   }
 
@@ -34,7 +34,7 @@ const Orders = ({ url }) => {
 
   return (
     <div className='orders add'>
-      <h3>Quản lý đơn hàng</h3>
+      <h3>Order Management</h3>
       <div className="order-list">
         {orders.map((order, index) => (
           <div key={index} className='order-item'>
@@ -58,13 +58,13 @@ const Orders = ({ url }) => {
               </div>
               <p className='order-item-phone'>{order.address.phone}</p>
             </div>
-            <p>Sản phẩm: {order.items.length}</p>
+            <p>Items: {order.items.length}</p>
             <p>${order.amount}</p>
             <select onChange={(event) => statusHandler(event, order._id)} value={order.status}>
-              <option value="Đang xử lý">Đang xử lý</option>
-              <option value="Đang chuẩn bị">Đang chuẩn bị</option>
-              <option value="Đang giao hàng">Đang giao hàng</option>
-              <option value="Đã giao">Đã giao</option>
+              <option value="Processing">Processing</option>
+              <option value="Preparing">Preparing</option>
+              <option value="Out for Delivery">Out for Delivery</option>
+              <option value="Delivered">Delivered</option>
             </select>
           </div>
         ))}
