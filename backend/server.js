@@ -1,5 +1,6 @@
 import express from "express"
 import cors from "cors"
+import path from "path"
 import { connectDB } from "./config/db.js"
 import foodRouter from "./routes/foodRoute.js"
 import userRouter from "./routes/userRoute.js"
@@ -10,6 +11,7 @@ import orderRouter from "./routes/orderRoute.js"
 // app config
 const app = express()
 const port = process.env.PORT || 4000
+const __dirname = path.resolve()
 
 // middleware
 app.use(express.json())
@@ -25,8 +27,16 @@ app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 
-app.get("/",(req,res)=>{
-    res.send("API Working")
+// serve admin panel
+app.use("/admin", express.static(path.join(__dirname, "../admin/dist")))
+app.get("/admin/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../admin/dist/index.html"))
+})
+
+// serve frontend
+app.use(express.static(path.join(__dirname, "../frontend/dist")))
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"))
 })
 
 app.listen(port,()=>{
